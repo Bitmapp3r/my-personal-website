@@ -87,7 +87,7 @@ export default function ProjectSection() {
         onClickStateChangeFunction={() => setIsPintOSBoxOpen(false)}
       >
         <p>
-          The 'PintOS' project was part of the Imperial College London second
+          The &apos;PintOS&apos; project was part of the Imperial College London second
           year Computing curriculum. To avoid plagiarism, please contact me
           directly to view the project repository.
         </p>
@@ -98,7 +98,7 @@ export default function ProjectSection() {
         onClickStateChangeFunction={() => setIsWACCBoxOpen(false)}
       >
         <p>
-          The 'WACC Compiler' project was part of the Imperial College London
+          The &apos;WACC Compiler&apos; project was part of the Imperial College London
           second year Computing curriculum. To avoid plagiarism, please contact
           me directly to view the project repository.
         </p>
@@ -109,8 +109,8 @@ export default function ProjectSection() {
         onClickStateChangeFunction={() => setIsCProjBoxOpen(false)}
       >
         <p>
-          The 'Aarch64 Mode ARMv8 Emulator, Assembler and Wireless Morse Code
-          Device' project was part of the Imperial College London first year
+          The &apos;Aarch64 Mode ARMv8 Emulator, Assembler and Wireless Morse Code
+          Device&apos; project was part of the Imperial College London first year
           Computing curriculum. To avoid plagiarism, please contact me directly
           to view the project repository.
         </p>

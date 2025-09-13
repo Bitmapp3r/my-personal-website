@@ -16,7 +16,7 @@ export default function Hero() {
               {/* welcome */}
               <h1 className="text-center font-vt323 text-5xl sm:text-6xl md:text-7xl bg-clip-text text-transparent bg-[linear-gradient(0deg,#D93B8A_0%,#F70000_100%)]">
                 <span className="bg-clip-text text-transparent bg-[linear-gradient(0deg,#D93B8A_0%,#F70000_100%)]">
-                  Hi there! I'm Tausif Samad :)
+                  Hi there! I&apos;m Tausif Samad :)
                 </span>
               </h1>
               {/* profile picture div border */}
@@ -37,7 +37,7 @@ export default function Hero() {
                 {/* brief about me */}
                 <h2 className="font-vt323 text-[#E81E45] text-2xl sm:text-3xl 2xl:text-4xl leading-none text-center">
                   a Computing student at Imperial College London. Feel free to
-                  have a look at what I've been getting up to:
+                  have a look at what I&apos;ve been getting up to:
                 </h2>
               </div>
             </div>
