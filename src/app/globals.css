@@ -13,6 +13,10 @@ order all respectively. */
   --font-workbench--font-variation-settings: "BLED" 0, "SCAN" 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Defining global (root element) css variables */
 /* :root {
   --background: #ffffff;

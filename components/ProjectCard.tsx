@@ -5,24 +5,36 @@ interface ProjectCardProps {
   alt: string;
   title: string;
   description: string;
+  onClickStateChangeFunction?: () => void;
 }
 
-export default function ProjectCard({ image, alt, title, description }: ProjectCardProps) {
+export default function ProjectCard({
+  image,
+  alt,
+  title,
+  description,
+  onClickStateChangeFunction,
+}: ProjectCardProps) {
   return (
-    <div className="w-full flex flex-col">
-      {/* Image */}
-      <div className="w-full aspect-square rounded-tl-[2rem] rounded-tr-[2rem] overflow-hidden relative bg-white">
-        <Image src={image} alt={alt} fill className="object-contain" />
-      </div>
+    <div
+      className="relative py-2 w-full flex flex-col cursor-pointer hover:scale-105 hover:z-1 duration-200 ease-out break-inside-avoid-column"
+      onClick={onClickStateChangeFunction}
+    >
+      <div className="border-2 border-[#E81E45] border-solid rounded-[2rem] overflow-hidden">
+        {/* Image */}
+        <div className="w-full aspect-square  overflow-hidden relative bg-white">
+          <Image src={image} alt={alt} fill className="object-contain" />
+        </div>
 
-      {/* Title */}
-      <div className="w-full font-workbench text-[#E81E45] text-xl bg-[#000000] pl-6 pt-6">
-        <h2>{title}</h2>
-      </div>
+        {/* Title */}
+        <div className="w-full font-workbench text-[#E81E45] text-xl sm:text-2xl 2xl:text-3xl bg-[#0f1015] px-6 pt-6">
+          <h2>{title}</h2>
+        </div>
 
-      {/* Description */}
-      <div className="w-full font-vt323 text-[#E81E45] text-base bg-[#000000] pt-1 px-6 pb-10 rounded-bl-[2rem] rounded-br-[2rem] leading-none text-justify hyphens-auto">
-        <p>{description}</p>
+        {/* Description */}
+        <div className="w-full font-vt323 text-[#E81E45] text-base sm:text-lg lg:text-xl 2xl:text-2xl bg-[#0f1015] pt-1 px-6 pb-10  leading-none text-justify hyphens-auto">
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );
